@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+         .spinner{
+            width: 10rem;
+            height: 10rem;
+            border-top: 1rem solid red;
+            border-right: 1rem solid transparent;
+            border-radius: 50%;
+            margin: auto;
+            animation: spinning 1s linear infinite ;
+         }
+         .circle{
+            width: 2rem;
+            height: 2rem;
+            background-color: red;
+            border-radius: 50%;
+            margin-left: 7.5rem;
+            
+         }
+         @keyframes spinning{
+100%{
+    transform: rotate(360deg);
+}
+         } 
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="spinner">
+        <div class="circle"></div>
+    </div>
+</div>
+</body>
+</html>
